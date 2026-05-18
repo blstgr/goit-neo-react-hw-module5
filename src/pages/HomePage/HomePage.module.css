@@ -1,0 +1,22 @@
+.section {
+  display: grid;
+  gap: 18px;
+}
+
+.title {
+  margin: 0;
+  color: #102a43;
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+.status,
+.error {
+  margin: 0;
+  color: #52606d;
+  font-size: 17px;
+}
+
+.error {
+  color: #b42318;
+}

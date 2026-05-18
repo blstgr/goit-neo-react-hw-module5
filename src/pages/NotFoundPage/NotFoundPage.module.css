@@ -1,0 +1,26 @@
+.section {
+  display: grid;
+  gap: 14px;
+}
+
+.title {
+  margin: 0;
+  color: #102a43;
+  font-size: 34px;
+}
+
+.text {
+  margin: 0;
+  color: #52606d;
+  font-size: 17px;
+}
+
+.link {
+  width: max-content;
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: #ffffff;
+  background-color: #0b7285;
+  font-weight: 700;
+  text-decoration: none;
+}

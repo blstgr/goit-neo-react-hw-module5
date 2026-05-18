@@ -1,0 +1,31 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9e2ec;
+  box-shadow: 0 2px 12px rgb(16 42 67 / 8%);
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 14px 0;
+}
+
+.link {
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: #334e68;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: #0b7285;
+}
+
+.active {
+  background-color: #d8f3f5;
+  color: #0b7285;
+}
