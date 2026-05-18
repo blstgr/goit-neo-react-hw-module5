@@ -1,13 +1,13 @@
-# Movie Search
+# Пошук фільмів
 
-React homework project for Topic 10: routing. The app searches movies by title and shows trending movies, movie details, cast, and reviews using the TMDB API.
+Домашня робота з теми 10: маршрутизація. Застосунок дозволяє шукати фільми за назвою, переглядати популярні фільми за день, детальну інформацію про фільм, акторський склад та огляди за допомогою TMDB API.
 
-## Links
+## Посилання
 
-- Source code: https://github.com/blstgr/goit-neo-react-hw-module5
-- Live page: https://goit-neo-react-hw-module5-silk-rho.vercel.app
+- Вихідний код: https://github.com/blstgr/goit-neo-react-hw-module5
+- Робоча сторінка: https://goit-neo-react-hw-module5-silk-rho.vercel.app
 
-## Technologies
+## Технології
 
 - Vite
 - React
@@ -15,26 +15,26 @@ React homework project for Topic 10: routing. The app searches movies by title a
 - Axios
 - CSS Modules
 
-## Routes
+## Маршрути
 
-- `/` - home page with today's trending movies
-- `/movies` - movie search page
-- `/movies/:movieId` - movie details page
-- `/movies/:movieId/cast` - movie cast nested route
-- `/movies/:movieId/reviews` - movie reviews nested route
-- `*` - not found page with a link back home
+- `/` - домашня сторінка зі списком популярних фільмів за сьогодні
+- `/movies` - сторінка пошуку фільмів
+- `/movies/:movieId` - сторінка з детальною інформацією про фільм
+- `/movies/:movieId/cast` - вкладений маршрут з акторським складом
+- `/movies/:movieId/reviews` - вкладений маршрут з оглядами
+- `*` - сторінка помилки з посиланням на головну
 
-## Features
+## Функціональність
 
-- Trending movie list on the home page
-- Movie search by keyword with URL search parameters
-- Movie details with poster, overview, score, and genres
-- Nested cast and reviews sections
-- Back navigation to the previous page
-- Lazy-loaded route components with `React.lazy` and `Suspense`
-- Loading and error states for API requests
+- Список популярних фільмів на головній сторінці
+- Пошук фільмів за ключовим словом із використанням URL-параметрів
+- Детальна інформація про фільм: постер, опис, рейтинг і жанри
+- Вкладені секції з акторським складом та оглядами
+- Повернення на сторінку, з якої користувач перейшов до деталей фільму
+- Асинхронне завантаження маршрутів через `React.lazy` та `Suspense`
+- Стани завантаження та помилки для HTTP-запитів
 
-## Project Structure
+## Структура проєкту
 
 ```text
 src/
@@ -53,41 +53,41 @@ src/
     tmdb-api.js
 ```
 
-Each component and page has its own folder with a `.jsx` file and matching `.module.css` file.
+Кожен компонент і кожна сторінка мають окрему папку з `.jsx` файлом та відповідним `.module.css` файлом стилів.
 
-## Environment Variables
+## Змінні середовища
 
-The app requires a TMDB API Read Access Token.
+Для роботи застосунку потрібен TMDB API Read Access Token.
 
-Create a `.env.local` file in the project root:
+Створіть файл `.env.local` у корені проєкту:
 
 ```env
 VITE_TMDB_TOKEN=your_tmdb_api_read_access_token
 ```
 
-The token can be found in your TMDB account settings under API.
+Токен можна отримати в налаштуваннях акаунта TMDB у розділі API.
 
-## Local Development
+## Локальний запуск
 
-Install dependencies:
+Встановити залежності:
 
 ```bash
 npm install
 ```
 
-Start the development server:
+Запустити сервер розробки:
 
 ```bash
 npm run dev
 ```
 
-Build the project:
+Зібрати проєкт:
 
 ```bash
 npm run build
 ```
 
-Format the code:
+Відформатувати код:
 
 ```bash
 npm run format
